@@ -23,4 +23,4 @@
 - [x] Animations and transitions polish
 
 ## To see the project
-()
+(https://expense-tracker-psi-nine-90.vercel.app/)
