@@ -1,59 +1,26 @@
-# ExpenseTracker
+# Expense Tracker — Project Plan
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.19.
+**Goal:** track my expenses (name, amount, category), see a running total, and have it all stick around even after refreshing the page. Angular + Bootstrap, no backend.
 
-## Development server
+## What's on the page
+- A form to add an expense (name, amount, category)
+- A list of all expenses, each with a delete button
+- A running total at the bottom
+- Smooth animations when adding or removing an expense
 
-To start a local development server, run:
+## How I organized it
+- A shared data file (service) that holds the expense list and handles adding/deleting
+- The expense list is saved to the browser's local storage, so it survives a refresh
+- Everything lives on one page, no need to split into a lot of components for something this small
 
-```bash
-ng serve
-```
+## Build order
+- [x] Set up the project, Bootstrap, and the repo
+- [x] Set up the data (model + service)
+- [x] Add expense form
+- [x] Expense list with delete
+- [x] Running total
+- [x] Save to local storage so data survives a refresh
+- [x] Animations and transitions polish
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## To see the project
+()
