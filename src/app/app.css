@@ -1,3 +1,33 @@
+.app-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2rem 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.expense-container {
+  max-width: 500px;
+  width: 100%;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.expense-item {
+  transition: all 0.3s ease;
+}
+
+.expense-item.removing {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
 .fade-in-page {
   animation: fadeIn 0.4s ease;
 }
@@ -57,4 +87,39 @@
 
 h5.text-end {
   transition: color 0.2s ease;
+}
+.app-wrapper {
+  background-color: #ffffff;
+  color: #212529;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app-wrapper.dark-mode {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+.app-wrapper.dark-mode .form-control {
+  background-color: #343a40;
+  border-color: #495057;
+  color: #f8f9fa;
+}
+
+.app-wrapper.dark-mode .form-control::placeholder {
+  color: #adb5bd;
+}
+
+.app-wrapper.dark-mode .list-group-item {
+  background-color: #343a40;
+  border-color: #495057;
+  color: #f8f9fa;
+}
+
+.app-wrapper.dark-mode .text-muted {
+  color: #adb5bd !important;
+}
+
+.app-wrapper.dark-mode .theme-toggle {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
 }

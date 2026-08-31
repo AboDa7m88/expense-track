@@ -18,12 +18,19 @@ export class App {
   amount: number | null = null;
   category = '';
 
+  isDarkMode = false;
+
   constructor(private expenseService: ExpenseService) {
     this.expenses = this.expenseService.getExpenses();
   }
 
   addExpense(): void {
-    if (!this.name.trim() || !this.amount || this.amount <= 0 || !this.category.trim()) {
+    if (
+      !this.name.trim() ||
+      !this.amount ||
+      this.amount <= 0 ||
+      !this.category.trim()
+    ) {
       return;
     }
 
@@ -56,5 +63,9 @@ export class App {
 
   get total(): number {
     return this.expenses.reduce((sum, e) => sum + e.amount, 0);
+  }
+
+  toggleTheme(): void {
+    this.isDarkMode = !this.isDarkMode;
   }
 }
